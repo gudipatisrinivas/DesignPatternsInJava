@@ -18,10 +18,16 @@ public class CompositeImpl {
 		Composite peri=new Composite();
 		peri.addComponent(monitor);
 		peri.addComponent(mouse);
-		System.out.println("**** CPU Details *****");
+		System.out.println("\n**** CPU Details *****");
 		cpu.showPrice();
-		System.out.println("**** Peripheral Details *****");
+		System.out.println("\n**** Peripheral Details *****");
 		peri.showPrice();
+		System.out.println("\n**** Computer Details *****");
+		
+		Composite comp=new Composite();
+		comp.addComponent(cpu);
+		comp.addComponent(peri);
+		comp.showPrice();
 		
 
 	}
