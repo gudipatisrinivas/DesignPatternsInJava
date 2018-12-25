@@ -24,6 +24,7 @@ public class CompositeImpl {
 		peri.showPrice();
 		System.out.println("\n**** Computer Details *****");
 		
+		
 		Composite comp=new Composite();
 		comp.addComponent(cpu);
 		comp.addComponent(peri);
