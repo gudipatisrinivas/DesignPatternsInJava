@@ -1,7 +1,11 @@
 package com.designpatterns.structural.composite;
 
+import java.util.ArrayList;
+
 public class MenuTestDrive {
 	public static void main(String args[]) {
+		ArrayList<Integer> array=new ArrayList<>();
+		//array.addAll(c);
 		MenuComponent pancakeHouseMenu = new Menu("PANCAKE HOUSE MENU", "Breakfast");
 		MenuComponent dinerMenu = new Menu("DINER MENU", "Lunch");
 		MenuComponent cafeMenu = new Menu("CAFE MENU", "Dinner");
